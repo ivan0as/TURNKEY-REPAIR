@@ -86,7 +86,7 @@ body * {
     line-height: 15px;
 }
 
-.home a{
+.header-navigation__item a:hover{
     color: #E3B873;
 }
 
@@ -221,8 +221,6 @@ body * {
 
 .projects-navigation__item:first-child{
     margin-left: 0px;
-    border-bottom: 1px solid #E3B873;
-    padding-bottom: 7px;
 }
 
 .projects-navigation__item:last-child{
@@ -232,9 +230,16 @@ body * {
 .projects-navigation__item a{
     font-size: 14px;
     line-height: 19px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #131313;
 }
 
-.projects-navigation__item .subtitle{
+.projects-navigation .projects-navigation__item a:hover{
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+
+.projects-navigation__item .subtitle, .projects-navigation__item a:first-child{
     color:rgba(255, 255, 255, .3);
 }
 
@@ -772,20 +777,21 @@ body * {
 
 .fantasies ul li:first-child{
     height: 26px;
-    padding-bottom: 32px;
-    margin-top: 47px;
-    color: #E3B873;
-    border-bottom: 1px solid #E3B873;
     width: 150px;
+    margin-top: 47px;
 }
 
 .fantasies ul li a{
     color: #FFFFFF;
     text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
-.fantasies ul li:first-child a{
+.fantasies ul li a:hover{
     color: #E3B873;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #E3B873;
 }
 
 .img-styles1-2, .img-styles3-4{
@@ -975,6 +981,7 @@ body * {
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     width: 517px;
+    color: white;
 }
 
 .questions .label .input::placeholder{
@@ -1430,7 +1437,7 @@ body * {
         order: -2;
         padding-left: 0;
         padding-right: 0;
-        width: 375px;
+        width: 100%;
     }
 
     .name-phone{
